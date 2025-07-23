@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 09:09:17 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/22 12:16:40 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/07/23 10:51:33 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,14 @@ int	size(char const *str, char c)
 	i = 0;
 	while (str[i])
 	{
-		while (str[i] == c && str[i])
-			i++;
-		if (str[i] != c && str[i])
+		if (str[i] != c)
 		{
 			count++;
-			while (str[i] != str[i])
-			{
+			while (str[i] && str[i] != c)
 				i++;
-			}
 		}
+		else
+			i++;
 	}
 	return (count);
 }
@@ -39,23 +37,28 @@ char	*split_word(char const *str, char c)
 {
 	char	*word;
 	int		word_len;
-	int		i;
 
 	word_len = 0;
-	word_pos = 0;
-	i = 0;
 	while (str[word_len] && str[word_len] != c)
 		word_len++;
-	word = malloc(word_len + 1);
+	word = (char *)malloc(sizeof(char) * (word_len + 1) + 1);
 	if (!word)
 		return (NULL);
-	while (i < word_len)
+	word_len = 0;
+	while (str[word_len] && str[word_len] != c)
 	{
-		word[i] = str[i];
-		i++
+		word[word_len] = str[word_len];
+		word_len++;
 	}
-	word[i] = '\0';
+	word[word_len] = '\0';
 	return (word);
+}
+
+void	free_all(char **words, int pos)
+{
+	while (pos--)
+		free(words[pos]);
+	free(words);
 }
 
 char	**ft_split(char const *s, char c)
@@ -67,20 +70,22 @@ char	**ft_split(char const *s, char c)
 	words_pos = 0;
 	i = 0;
 	words = (char **)malloc(sizeof(char *) * size(s, c) + 1);
-	if (!words || !s || !c)
+	if (!words || !s)
 		return (NULL);
 	while (s[i])
 	{
 		if (s[i] != c)
 		{
 			words[words_pos] = split_word(&s[i], c);
+			if (!words[words_pos])
+				return (free_all(words, words_pos), NULL);
+			words_pos++;
 			while (s[i] && s[i] != c)
 				i++;
-			words_pos++;
 		}
 		else
 			i++;
 	}
-	words[word_pos] = NULL;
+	words[words_pos] = NULL;
 	return (words);
 }
