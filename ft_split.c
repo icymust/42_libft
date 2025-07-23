@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
+/*   By: martinmust <martinmust@student.42.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 09:09:17 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/23 10:51:33 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/07/24 00:48:02 by martinmust       ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*split_word(char const *str, char c)
 	word_len = 0;
 	while (str[word_len] && str[word_len] != c)
 		word_len++;
-	word = (char *)malloc(sizeof(char) * (word_len + 1) + 1);
+	word = (char *)malloc(sizeof(char) * (word_len + 1));
 	if (!word)
 		return (NULL);
 	word_len = 0;
@@ -69,7 +69,7 @@ char	**ft_split(char const *s, char c)
 
 	words_pos = 0;
 	i = 0;
-	words = (char **)malloc(sizeof(char *) * size(s, c) + 1);
+	words = (char **)malloc(sizeof(char *) * (size(s, c) + 1));
 	if (!words || !s)
 		return (NULL);
 	while (s[i])
