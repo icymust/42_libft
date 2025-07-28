@@ -11,7 +11,7 @@ BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c
 OBJ_PATH = ${MANDATORY:.c=.o}
 BONUS_PATH = ${BONUS:.c=.o}
 
-CC = gcc 
+CC = cc 
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
 INCLUDES = -I include
