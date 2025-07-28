@@ -6,13 +6,13 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 11:50:10 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/22 09:55:18 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/07/28 12:22:23 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	check_set(char c, const char *set)
+static int	check_set(char c, const char *set)
 {
 	int	i;
 

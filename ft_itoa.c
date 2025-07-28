@@ -6,13 +6,13 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 09:10:29 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/23 12:56:30 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/07/28 12:21:15 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	count(long l)
+static int	count(long l)
 {
 	int	i;
 
@@ -30,7 +30,7 @@ int	count(long l)
 	return (i);
 }
 
-char	*create_str(char *str, long l, int n)
+static char	*create_str(char *str, long l, int n)
 {
 	if (l == 0)
 	{
