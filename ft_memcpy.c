@@ -56,5 +56,12 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 //     char buf[] = "OverlapTest";
 //     ft_memcpy(buf+2, buf, 5);
 //     printf("Test 4: %s\n", buf);
-//     return (0);
+
+//     // Test copying a string
+//     const char src[] = "Hello, world!";
+//     char dest[20];
+//     ft_memcpy(dest, src, strlen(src) + 1);
+//     printf("Copied string: %s\n", dest);
+
+//     return 0;
 // }

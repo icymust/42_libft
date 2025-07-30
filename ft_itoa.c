@@ -65,3 +65,18 @@ char	*ft_itoa(int n)
 	str[i--] = '\0';
 	return (create_str(str, l, i));
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test with positive number
+//     printf("Test 123: %s\n", ft_itoa(123));
+
+//     // Test with negative number
+//     printf("Test -456: %s\n", ft_itoa(-456));
+
+//     // Test with zero
+//     printf("Test 0: %s\n", ft_itoa(0));
+
+//     return 0;
+// }

@@ -28,3 +28,20 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+// #include <stdio.h>
+// #include <string.h>
+// int main(void)
+// {
+//     // Test comparing two identical strings
+//     const char str1[] = "Hello";
+//     const char str2[] = "Hello";
+//     printf("Comparison result: %d\n", ft_memcmp(str1, str2, strlen(str1)));
+
+//     // Test comparing two different strings
+//     const char str3[] = "Hello";
+//     const char str4[] = "World";
+//     printf("Comparison result: %d\n", ft_memcmp(str3, str4, strlen(str3)));
+
+//     return 0;
+// }

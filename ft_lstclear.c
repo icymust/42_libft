@@ -28,3 +28,14 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		*lst = NULL;
 	}
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test clearing a list
+//     t_list *list = ft_lstnew(malloc(10));
+//     ft_lstclear(&list, free);
+//     printf("List cleared: %p\n", (void *)list);
+
+//     return 0;
+// }

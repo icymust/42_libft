@@ -17,3 +17,17 @@ int	ft_isdigit(int n)
 	else
 		return (0);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test with digit characters
+//     printf("Test '0': %d\n", ft_isdigit('0'));
+//     printf("Test '9': %d\n", ft_isdigit('9'));
+
+//     // Test with non-digit characters
+//     printf("Test 'a': %d\n", ft_isdigit('a'));
+//     printf("Test '@': %d\n", ft_isdigit('@'));
+
+//     return 0;
+// }

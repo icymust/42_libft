@@ -21,17 +21,46 @@ t_list	*ft_lstlast(t_list *lst)
 	return (lst);
 }
 
-// ver2
-// t_list *ft_lstlast(t_list *lst){
-//    int last;
-//    int i;
-//    if(!lst)
-//       return(NULL);
-//    last = ft_lstsize(lst)-1;
-//    i = 0;
-//    while(i < last){
-//       lst = lst->next;
-//       i++;
-//    }
-//    return(lst);
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main(void)
+// {
+//     // Test getting the last element of a list
+//     t_list *list = ft_lstnew("First");
+//     t_list *second = ft_lstnew("Second");
+//     t_list *third = ft_lstnew("Third");
+
+//     if (!list || !second || !third)
+//     {
+//         printf("Memory allocation failed\n");
+//         return 1;
+//     }
+
+//     list->next = second;
+//     second->next = third;
+
+//     t_list *last = ft_lstlast(list);
+//     printf("Last element content: %s\n", (char *)last->content);
+
+//     // Free allocated memory
+//     ft_lstdelone(third, free);
+//     ft_lstdelone(second, free);
+//     ft_lstdelone(list, free);
+
+//     return 0;
 // }
+
+// // ver2
+// // t_list *ft_lstlast(t_list *lst){
+// //    int last;
+// //    int i;
+// //    if(!lst)
+// //       return(NULL);
+// //    last = ft_lstsize(lst)-1;
+// //    i = 0;
+// //    while(i < last){
+// //       lst = lst->next;
+// //       i++;
+// //    }
+// //    return(lst);
+// // }

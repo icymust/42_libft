@@ -26,3 +26,22 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(l / 10, fd);
 	ft_putchar_fd(l % 10 + '0', fd);
 }
+
+// #include <stdio.h>
+// #include <fcntl.h>
+// int main(void)
+// {
+//     // Test writing a number to a file
+//     int fd = open("test_putnbr.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
+//     if (fd == -1)
+//     {
+//         perror("Error opening file");
+//         return 1;
+//     }
+
+//     ft_putnbr_fd(12345, fd);
+//     close(fd);
+
+//     printf("Number 12345 written to test_putnbr.txt\n");
+//     return 0;
+// }

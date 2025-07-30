@@ -19,3 +19,15 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test adding to the front of a list
+//     t_list *list = ft_lstnew("World");
+//     t_list *new_elem = ft_lstnew("Hello");
+//     ft_lstadd_front(&list, new_elem);
+//     printf("List content: %s\n", (char *)list->content);
+
+//     return 0;
+// }

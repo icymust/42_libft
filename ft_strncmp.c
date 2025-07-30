@@ -25,3 +25,16 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+
+// #include <stdio.h>
+// #include <string.h>
+// int main(void)
+// {
+//     // Test comparing two strings
+//     const char *s1 = "Hello";
+//     const char *s2 = "World";
+//     int result = ft_strncmp(s1, s2, 3);
+//     printf("Comparison result: %d\n", result);
+
+//     return 0;
+// }

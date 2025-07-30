@@ -26,3 +26,25 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+// #include <stdio.h>
+// #include <string.h>
+// int main(void)
+// {
+//     // Test finding a character in a string
+//     const char str[] = "Hello, world!";
+//     char *result = ft_memchr(str, 'w', strlen(str));
+//     if (result)
+//         printf("Found 'w' at position: %ld\n", result - str);
+//     else
+//         printf("Character 'w' not found\n");
+
+//     // Test with a character not in the string
+//     result = ft_memchr(str, 'z', strlen(str));
+//     if (result)
+//         printf("Found 'z' at position: %ld\n", result - str);
+//     else
+//         printf("Character 'z' not found\n");
+
+//     return 0;
+// }

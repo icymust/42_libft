@@ -54,3 +54,37 @@ char	*ft_strtrim(char const *s1, char const *set)
 	dst[dst_pos] = '\0';
 	return (dst);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     const char *str = "   Hello, world!   ";
+//     const char *set = " ";
+//     const char *empty_set = "";
+
+//     // Test case 1: Trimming spaces from both ends
+//     char *result = ft_strtrim(str, set);
+//     if (result && strcmp(result, "Hello, world!") == 0)
+//         printf("Test 1 Passed: Trimmed string is '%s'\n", result);
+//     else
+//         printf("Test 1 Failed: Unexpected result '%s'\n", result);
+//     free(result);
+
+//     // Test case 2: No characters to trim
+//     result = ft_strtrim(str, empty_set);
+//     if (result && strcmp(result, str) == 0)
+//         printf("Test 2 Passed: No trimming needed, result is '%s'\n", result);
+//     else
+//         printf("Test 2 Failed: Unexpected result '%s'\n", result);
+//     free(result);
+
+//     // Test case 3: Trimming all characters
+//     result = ft_strtrim("aaaa", "a");
+//     if (result && strcmp(result, "") == 0)
+//         printf("Test 3 Passed: All characters trimmed, result is an empty string\n");
+//     else
+//         printf("Test 3 Failed: Unexpected result '%s'\n", result);
+//     free(result);
+
+//     return 0;
+// }

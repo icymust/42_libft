@@ -24,3 +24,17 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test finding a character in a string
+//     const char *str = "Hello, world!";
+//     char *result = ft_strchr(str, 'w');
+//     if (result)
+//         printf("Found 'w' at position: %ld\n", result - str);
+//     else
+//         printf("Character 'w' not found\n");
+
+//     return 0;
+// }

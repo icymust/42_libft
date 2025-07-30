@@ -17,3 +17,21 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test with alphabetic characters
+//     printf("Test 'A': %d\n", ft_isalpha('A'));
+//     printf("Test 'z': %d\n", ft_isalpha('z'));
+
+//     // Test with non-alphabetic characters
+//     printf("Test '1': %d\n", ft_isalpha('1'));
+//     printf("Test '@': %d\n", ft_isalpha('@'));
+
+//     // Test with boundary values
+//     printf("Test 'a': %d\n", ft_isalpha('a'));
+//     printf("Test 'Z': %d\n", ft_isalpha('Z'));
+
+//     return 0;
+// }

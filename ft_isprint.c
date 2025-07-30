@@ -17,3 +17,17 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test with printable characters
+//     printf("Test 'A': %d\n", ft_isprint('A'));
+//     printf("Test ' ': %d\n", ft_isprint(' '));
+
+//     // Test with non-printable characters
+//     printf("Test '\n': %d\n", ft_isprint('\n'));
+//     printf("Test 127: %d\n", ft_isprint(127));
+
+//     return 0;
+// }

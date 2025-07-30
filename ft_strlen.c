@@ -21,3 +21,14 @@ size_t	ft_strlen(const char *s)
 		len++;
 	return (len);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test calculating the length of a string
+//     const char *str = "Hello, world!";
+//     size_t len = ft_strlen(str);
+//     printf("Length of string: %zu\n", len);
+
+//     return 0;
+// }

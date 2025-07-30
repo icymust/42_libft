@@ -35,3 +35,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	dst[dst_pos] = '\0';
 	return (dst);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test joining two strings
+//     const char *s1 = "Hello, ";
+//     const char *s2 = "world!";
+//     char *joined = ft_strjoin(s1, s2);
+//     printf("Joined string: %s\n", joined);
+//     free(joined);
+
+//     return 0;
+// }

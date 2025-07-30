@@ -34,3 +34,51 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+
+// void *duplicate_content(void *content)
+// {
+//     char *new_content = malloc(strlen((char *)content) + 1);
+//     if (new_content)
+//         strcpy(new_content, (char *)content);
+//     return new_content;
+// }
+
+// void delete_content(void *content)
+// {
+//     free(content);
+// }
+// int main(void)
+// {
+//     // Test mapping a list
+//     t_list *list = ft_lstnew("First");
+//     t_list *second = ft_lstnew("Second");
+//     t_list *third = ft_lstnew("Third");
+
+//     if (!list || !second || !third)
+//     {
+//         printf("Memory allocation failed\n");
+//         return 1;
+//     }
+
+//     list->next = second;
+//     second->next = third;
+
+//     t_list *new_list = ft_lstmap(list, duplicate_content, delete_content);
+//     t_list *current = new_list;
+//     while (current)
+//     {
+//         printf("Mapped content: %s\n", (char *)current->content);
+//         current = current->next;
+//     }
+
+//     // Free allocated memory
+//     ft_lstclear(&new_list, delete_content);
+//     ft_lstdelone(third, free);
+//     ft_lstdelone(second, free);
+//     ft_lstdelone(list, free);
+
+//     return 0;
+// }

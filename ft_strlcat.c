@@ -43,11 +43,16 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (result);
 }
 
+// #include <stdio.h>
+// #include <string.h>
 // int	main(void)
 // {
-// 	char src[] = "Hello";
-// 	char dest[50] = "asd";
-// 	ft_strlcat(dest, src, 9);
-// 	printf("Test: %s\n", dest);
-// 	return (0);
+//     // Test concatenating strings with a size limit
+//     char dest[20] = "Hello, ";
+//     const char *src = "world!";
+//     size_t result = ft_strlcat(dest, src, sizeof(dest));
+//     printf("Concatenated string: %s\n", dest);
+//     printf("Total length: %zu\n", result);
+
+//     return 0;
 // }

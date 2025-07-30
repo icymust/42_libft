@@ -31,3 +31,15 @@ char	*ft_strdup(const char *s1)
 	result[i] = '\0';
 	return (result);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test duplicating a string
+//     const char *str = "Hello, world!";
+//     char *dup = ft_strdup(str);
+//     printf("Duplicated string: %s\n", dup);
+//     free(dup);
+
+//     return 0;
+// }

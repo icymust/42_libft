@@ -89,3 +89,18 @@ char	**ft_split(char const *s, char c)
 	words[words_pos] = NULL;
 	return (words);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test splitting a string by a delimiter
+//     char **result = ft_split("Hello world this is a test", ' ');
+//     for (int i = 0; result[i] != NULL; i++)
+//     {
+//         printf("Word %d: %s\n", i, result[i]);
+//         free(result[i]);
+//     }
+//     free(result);
+
+//     return 0;
+// }

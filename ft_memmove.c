@@ -35,3 +35,15 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+
+// #include <stdio.h>
+// #include <string.h>
+// int main(void)
+// {
+//     // Test moving overlapping memory regions
+//     char str[] = "Hello, world!";
+//     ft_memmove(str + 7, str, 5);
+//     printf("Result after memmove: %s\n", str);
+
+//     return 0;
+// }

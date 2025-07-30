@@ -28,3 +28,17 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	}
 	return (ft_strlen(src));
 }
+
+// #include <stdio.h>
+// #include <string.h>
+// int main(void)
+// {
+//     // Test copying a string with a size limit
+//     char dest[10];
+//     const char *src = "Hello, world!";
+//     size_t result = ft_strlcpy(dest, src, sizeof(dest));
+//     printf("Copied string: %s\n", dest);
+//     printf("Total length: %zu\n", result);
+
+//     return 0;
+// }

@@ -17,3 +17,30 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test case 1: Lowercase letter
+//     int result = ft_toupper('a');
+//     if (result == 'A')
+//         printf("Test 1 Passed: 'a' converted to '%c'\n", result);
+//     else
+//         printf("Test 1 Failed: Unexpected result '%c'\n", result);
+
+//     // Test case 2: Uppercase letter
+//     result = ft_toupper('A');
+//     if (result == 'A')
+//         printf("Test 2 Passed: 'A' remains '%c'\n", result);
+//     else
+//         printf("Test 2 Failed: Unexpected result '%c'\n", result);
+
+//     // Test case 3: Non-alphabetic character
+//     result = ft_toupper('1');
+//     if (result == '1')
+//         printf("Test 3 Passed: '1' remains '%c'\n", result);
+//     else
+//         printf("Test 3 Failed: Unexpected result '%c'\n", result);
+
+//     return 0;
+// }

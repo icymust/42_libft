@@ -25,3 +25,19 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
+
+// #include <stdio.h>
+// void modify_char(unsigned int i, char *c)
+// {
+//     *c = *c + i;
+// }
+
+// int main(void)
+// {
+//     // Test modifying a string with a function
+//     char str[] = "abcd";
+//     ft_striteri(str, modify_char);
+//     printf("Modified string: %s\n", str);
+
+//     return 0;
+// }

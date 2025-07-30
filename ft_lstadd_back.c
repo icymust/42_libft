@@ -28,3 +28,15 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		last->next = new;
 	}
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     // Test adding to an empty list
+//     t_list *list = NULL;
+//     t_list *new_elem = ft_lstnew("Hello");
+//     ft_lstadd_back(&list, new_elem);
+//     printf("List content: %s\n", (char *)list->content);
+
+//     return 0;
+// }

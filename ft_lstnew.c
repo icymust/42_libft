@@ -23,3 +23,22 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
+
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main(void)
+// {
+//     // Test creating a new list element
+//     t_list *elem = ft_lstnew("Hello, world!");
+//     if (elem)
+//     {
+//         printf("Element content: %s\n", (char *)elem->content);
+//         ft_lstdelone(elem, free);
+//     }
+//     else
+//     {
+//         printf("Memory allocation failed\n");
+//     }
+
+//     return 0;
+// }
