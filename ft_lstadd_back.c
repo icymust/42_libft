@@ -38,5 +38,11 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 //     ft_lstadd_back(&list, new_elem);
 //     printf("List content: %s\n", (char *)list->content);
 
+//     // Test adding to a non-empty list
+//     t_list *second_elem = ft_lstnew("World");
+//     ft_lstadd_back(&list, second_elem);
+//     printf("First element: %s\n", (char *)list->content);
+//     printf("Second element: %s\n", (char *)list->next->content);
+
 //     return 0;
 // }

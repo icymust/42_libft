@@ -33,14 +33,14 @@ void	*ft_memchr(const void *s, int c, size_t n)
 // {
 //     // Test finding a character in a string
 //     const char str[] = "Hello, world!";
-//     char *result = ft_memchr(str, 'w', strlen(str));
+//     char *result = ft_memchr(str, 'w', ft_strlen(str));
 //     if (result)
 //         printf("Found 'w' at position: %ld\n", result - str);
 //     else
 //         printf("Character 'w' not found\n");
 
 //     // Test with a character not in the string
-//     result = ft_memchr(str, 'z', strlen(str));
+//     result = ft_memchr(str, 'z', ft_strlen(str));
 //     if (result)
 //         printf("Found 'z' at position: %ld\n", result - str);
 //     else

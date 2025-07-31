@@ -28,10 +28,5 @@ int	ft_isalpha(int c)
 //     // Test with non-alphabetic characters
 //     printf("Test '1': %d\n", ft_isalpha('1'));
 //     printf("Test '@': %d\n", ft_isalpha('@'));
-
-//     // Test with boundary values
-//     printf("Test 'a': %d\n", ft_isalpha('a'));
-//     printf("Test 'Z': %d\n", ft_isalpha('Z'));
-
 //     return 0;
 // }

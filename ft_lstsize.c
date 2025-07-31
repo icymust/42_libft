@@ -30,9 +30,9 @@ int	ft_lstsize(t_list *lst)
 // int main(void)
 // {
 //     // Test getting the size of a list
-//     t_list *list = ft_lstnew("First");
-//     t_list *second = ft_lstnew("Second");
-//     t_list *third = ft_lstnew("Third");
+//     t_list *list = ft_lstnew(ft_strdup("First"));
+//     t_list *second = ft_lstnew(ft_strdup("Second"));
+//     t_list *third = ft_lstnew(ft_strdup("Third"));
 
 //     if (!list || !second || !third)
 //     {

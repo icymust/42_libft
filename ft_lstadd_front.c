@@ -27,7 +27,8 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 //     t_list *list = ft_lstnew("World");
 //     t_list *new_elem = ft_lstnew("Hello");
 //     ft_lstadd_front(&list, new_elem);
-//     printf("List content: %s\n", (char *)list->content);
+//     printf("List content 1: %s\n", (char *)list->content);
+// 	 printf("List content 2: %s\n", (char *)list->next->content);
 
 //     return 0;
 // }

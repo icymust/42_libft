@@ -34,9 +34,9 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 // int	main(void)
 // {
 // 	// Test iterating over a list
-// 	t_list	*list = ft_lstnew("First");
-// 	t_list	*second = ft_lstnew("Second");
-// 	t_list	*third = ft_lstnew("Third");
+// 	t_list	*list = ft_lstnew(ft_strdup("First"));
+// 	t_list	*second = ft_lstnew(ft_strdup("Second"));
+// 	t_list	*third = ft_lstnew(ft_strdup("Third"));
 
 // 	if (!list || !second || !third)
 // 	{

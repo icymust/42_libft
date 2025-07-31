@@ -32,10 +32,25 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 // #include <stdio.h>
 // int main(void)
 // {
-//     // Test clearing a list
-//     t_list *list = ft_lstnew(malloc(10));
+//     // Test clearing a list with multiple elements
+//     t_list *list = ft_lstnew(ft_strdup("Hello"));
+//     t_list *second = ft_lstnew(ft_strdup("World"));
+//     t_list *third = ft_lstnew(ft_strdup("42"));
+
+//     list->next = second;
+//     second->next = third;
+
+//     printf("List before clearing:\n");
+//     t_list *temp = list;
+//     while (temp)
+//     {
+//         printf("%s\n", (char *)temp->content);
+//         temp = temp->next;
+//     }
+
 //     ft_lstclear(&list, free);
-//     printf("List cleared: %p\n", (void *)list);
+
+//     printf("List after clearing: %p\n", (void *)list);
 
 //     return 0;
 // }
