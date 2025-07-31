@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 10:04:01 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/29 11:17:28 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/07/31 13:07:49 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,4 +88,5 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
 //     return 0;
 // }
-// //cc -Wall -Wextra -Werror ft_lstmap.c ft_lstdelone.c ft_lstnew.c ft_lstadd_back.c ft_lstclear.c libft.a 
+// cc -Wall -Wextra -Werror ft_lstmap.c ft_lstdelone.c ft_lstnew.c 
+// ft_lstadd_back.c ft_lstclear.c libft.a 

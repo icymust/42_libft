@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 11:08:09 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/28 11:12:21 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/07/31 11:34:06 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,20 +23,8 @@ void	ft_putendl_fd(char *s, int fd)
 }
 
 // #include <stdio.h>
-// #include <fcntl.h>
 // int main(void)
 // {
-//     // Test writing a string with a newline to a file
-//     int fd = open("test_putendl.txt", O_WRONLY | O_CREAT | O_TRUNC, 0644);
-//     if (fd == -1)
-//     {
-//         perror("Error opening file");
-//         return 1;
-//     }
-
-//     ft_putendl_fd("Hello, world!", fd);
-//     close(fd);
-
-//     printf("String 'Hello, world!' written to test_putendl.txt\n");
+//     ft_putendl_fd("Hello, World!", 1);
 //     return 0;
 // }

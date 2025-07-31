@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 11:50:10 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/28 12:22:23 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/07/31 12:56:11 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 }
 
 // #include <stdio.h>
+// #include <string.h>
 // int main(void)
 // {
 //     const char *str = "   Hello, world!   ";
@@ -65,26 +66,26 @@ char	*ft_strtrim(char const *s1, char const *set)
 //     // Test case 1: Trimming spaces from both ends
 //     char *result = ft_strtrim(str, set);
 //     if (result && strcmp(result, "Hello, world!") == 0)
-//         printf("Test 1 Passed: Trimmed string is '%s'\n", result);
+//         printf("Pass: '%s'\n", result);
 //     else
-//         printf("Test 1 Failed: Unexpected result '%s'\n", result);
-//     free(result);
+//         printf("Fail: '%s'\n", result);
+// 	free(result);
 
 //     // Test case 2: No characters to trim
 //     result = ft_strtrim(str, empty_set);
 //     if (result && strcmp(result, str) == 0)
-//         printf("Test 2 Passed: No trimming needed, result is '%s'\n", result);
+//         printf("Pass: '%s'\n", result);
 //     else
-//         printf("Test 2 Failed: Unexpected result '%s'\n", result);
+//         printf("Fail: '%s'\n", result);
 //     free(result);
 
 //     // Test case 3: Trimming all characters
 //     result = ft_strtrim("aaaa", "a");
 //     if (result && strcmp(result, "") == 0)
-//         printf("Test 3 Passed: All characters trimmed, result is an empty string\n");
+//         printf("Pass: All characters trimmed\n");
 //     else
-//         printf("Test 3 Failed: Unexpected result '%s'\n", result);
+//         printf("Fail: '%s'\n", result);
 //     free(result);
 
-//     return 0;
+//     return (0);
 // }

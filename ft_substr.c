@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 12:33:07 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/29 10:48:44 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/07/31 13:01:40 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 }
 
 // #include <stdio.h>
+// #include <string.h>
 // int main(void)
 // {
 //     const char *str = "Hello, world!";

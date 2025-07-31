@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 12:09:32 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/17 10:21:42 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/07/31 11:20:55 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,5 @@ void	ft_bzero(void *s, size_t n)
 //     ft_bzero(str4, 5);
 //     printf("After: '%s' (all bytes set to 0)\n", str4);
 
-//     return 0;
+//     return (0);
 // }
-

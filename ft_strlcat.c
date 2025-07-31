@@ -6,21 +6,11 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 08:24:43 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/18 13:28:32 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/07/31 12:30:25 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// size_t	findlen(const char *s)
-// {
-// 	size_t	len;
-
-// 	len = 0;
-// 	while (s[len])
-// 		len++;
-// 	return (len);
-// }
 
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
