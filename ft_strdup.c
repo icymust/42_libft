@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 08:36:11 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/31 12:23:57 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:31:55 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,3 @@ char	*ft_strdup(const char *s1)
 	result[i] = '\0';
 	return (result);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-//     // Test duplicating a string
-//     const char *str = "Hello, world!";
-//     char *dup = ft_strdup(str);
-//     printf("Duplicated string: %s\n", dup);
-//     free(dup);
-
-//     return 0;
-// }

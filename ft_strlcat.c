@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 08:24:43 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/31 12:30:25 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:32:07 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,17 +32,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[dstlen] = '\0';
 	return (result);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int	main(void)
-// {
-//     // Test concatenating strings with a size limit
-//     char dest[20] = "Hello, ";
-//     const char *src = "world!";
-//     size_t result = ft_strlcat(dest, src, sizeof(dest));
-//     printf("Concatenated string: %s\n", dest);
-//     printf("Total length: %zu\n", result);
-
-//     return 0;
-// }

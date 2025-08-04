@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 11:08:09 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/31 11:34:06 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:31:34 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,3 @@ void	ft_putendl_fd(char *s, int fd)
 	write(fd, s, len);
 	write(fd, "\n", 1);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-//     ft_putendl_fd("Hello, World!", 1);
-//     return 0;
-// }

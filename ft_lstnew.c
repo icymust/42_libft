@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 11:03:08 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/28 11:11:50 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:30:55 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,22 +23,3 @@ t_list	*ft_lstnew(void *content)
 	node->next = NULL;
 	return (node);
 }
-
-// #include <stdio.h>
-// #include <stdlib.h>
-// int main(void)
-// {
-//     // Test creating a new list element
-//     t_list *elem = ft_lstnew("Hello, world!");
-//     if (elem)
-//     {
-//         printf("Element content: %s\n", (char *)elem->content);
-//         ft_lstdelone(elem, free);
-//     }
-//     else
-//     {
-//         printf("Memory allocation failed\n");
-//     }
-
-//     return 0;
-// }

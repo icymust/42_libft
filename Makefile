@@ -34,5 +34,3 @@ re: fclean all
 
 bonus: ${OBJ_PATH} ${BONUS_PATH}
 	ar rc ${NAME} ${OBJ_PATH} ${BONUS_PATH}
-
-#make clean/fclean/re/all

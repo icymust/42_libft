@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 08:08:41 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/18 10:51:05 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:31:23 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main(void)
-// {
-//     // Test moving overlapping memory regions
-//     char str[] = "Hello, world!";
-//     ft_memmove(str + 7, str, 5);
-//     printf("Result after memmove: %s\n", str);
-
-//     return 0;
-// }

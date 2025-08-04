@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 11:02:28 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/28 11:11:37 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:30:18 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,21 +28,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		last->next = new;
 	}
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-//     // Test adding to an empty list
-//     t_list *list = NULL;
-//     t_list *new_elem = ft_lstnew("Hello");
-//     ft_lstadd_back(&list, new_elem);
-//     printf("List content: %s\n", (char *)list->content);
-
-//     // Test adding to a non-empty list
-//     t_list *second_elem = ft_lstnew("World");
-//     ft_lstadd_back(&list, second_elem);
-//     printf("First element: %s\n", (char *)list->content);
-//     printf("Second element: %s\n", (char *)list->next->content);
-
-//     return 0;
-// }

@@ -6,13 +6,13 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 09:09:17 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/31 12:15:58 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 13:45:22 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	size(char const *str, char c)
+static int	size(char const *str, char c)
 {
 	int	count;
 	int	i;
@@ -33,7 +33,7 @@ int	size(char const *str, char c)
 	return (count);
 }
 
-char	*split_word(char const *str, char c)
+static char	*split_word(char const *str, char c)
 {
 	char	*word;
 	int		word_len;
@@ -54,7 +54,7 @@ char	*split_word(char const *str, char c)
 	return (word);
 }
 
-void	free_all(char **words, int pos)
+static void	free_all(char **words, int pos)
 {
 	while (pos--)
 		free(words[pos]);
@@ -89,18 +89,3 @@ char	**ft_split(char const *s, char c)
 	words[words_pos] = NULL;
 	return (words);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-//     // Test splitting a string by a delimiter
-//     char **result = ft_split("Hello world this is a test", ' ');
-//     for (int i = 0; result[i] != NULL; i++)
-//     {
-//         printf("Word %d: %s\n", i, result[i]);
-//         free(result[i]);
-//     }
-//     free(result);
-
-//     return 0;
-// }

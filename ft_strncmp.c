@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 10:19:50 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/31 12:41:07 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:32:24 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,16 +25,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main(void)
-// {
-//     // Test comparing two strings
-//     const char *s1 = "Hello";
-//     const char *s2 = "World";
-//     int result = ft_strncmp(s1, s2, 3);
-//     printf("Comparison result: %d\n", result);
-
-//     return 0;
-// }

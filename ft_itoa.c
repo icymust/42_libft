@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 09:10:29 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/28 12:21:15 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:30:12 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,18 +65,3 @@ char	*ft_itoa(int n)
 	str[i--] = '\0';
 	return (create_str(str, l, i));
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-//     // Test with positive number
-//     printf("Test 123: %s\n", ft_itoa(123));
-
-//     // Test with negative number
-//     printf("Test -456: %s\n", ft_itoa(-456));
-
-//     // Test with zero
-//     printf("Test 0: %s\n", ft_itoa(0));
-
-//     return 0;
-// }

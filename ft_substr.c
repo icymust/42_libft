@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/18 12:33:07 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/31 13:01:40 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:32:46 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,36 +37,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	dst[len] = '\0';
 	return (dst);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main(void)
-// {
-//     const char *str = "Hello, world!";
-
-//     // Test case 1: Substring within bounds
-//     char *result = ft_substr(str, 7, 5);
-//     if (result && strcmp(result, "world") == 0)
-//         printf("Test 1 Passed: Substring is '%s'\n", result);
-//     else
-//         printf("Test 1 Failed: Unexpected result '%s'\n", result);
-//     free(result);
-
-//     // Test case 2: Substring starting out of bounds
-//     result = ft_substr(str, 20, 5);
-//     if (result && strcmp(result, "") == 0)
-//         printf("Test 2 Passed: Out of bounds start returns empty string\n");
-//     else
-//         printf("Test 2 Failed: Unexpected result '%s'\n", result);
-//     free(result);
-
-//     // Test case 3: Substring length exceeds string length
-//     result = ft_substr(str, 7, 50);
-//     if (result && strcmp(result, "world!") == 0)
-//         printf("Test 3 Passed: Substring is '%s'\n", result);
-//     else
-//         printf("Test 3 Failed: Unexpected result '%s'\n", result);
-//     free(result);
-
-//     return 0;
-// }

@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 11:50:10 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/31 12:56:11 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:32:40 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,38 +54,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	dst[dst_pos] = '\0';
 	return (dst);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// int main(void)
-// {
-//     const char *str = "   Hello, world!   ";
-//     const char *set = " ";
-//     const char *empty_set = "";
-
-//     // Test case 1: Trimming spaces from both ends
-//     char *result = ft_strtrim(str, set);
-//     if (result && strcmp(result, "Hello, world!") == 0)
-//         printf("Pass: '%s'\n", result);
-//     else
-//         printf("Fail: '%s'\n", result);
-// 	free(result);
-
-//     // Test case 2: No characters to trim
-//     result = ft_strtrim(str, empty_set);
-//     if (result && strcmp(result, str) == 0)
-//         printf("Pass: '%s'\n", result);
-//     else
-//         printf("Fail: '%s'\n", result);
-//     free(result);
-
-//     // Test case 3: Trimming all characters
-//     result = ft_strtrim("aaaa", "a");
-//     if (result && strcmp(result, "") == 0)
-//         printf("Pass: All characters trimmed\n");
-//     else
-//         printf("Fail: '%s'\n", result);
-//     free(result);
-
-//     return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 11:16:17 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/31 12:28:00 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:32:03 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	dst[dst_pos] = '\0';
 	return (dst);
 }
-
-// #include <stdio.h>
-// int main(void)
-// {
-//     // Test joining two strings
-//     const char *s1 = "Hello, ";
-//     const char *s2 = "world!";
-//     char *joined = ft_strjoin(s1, s2);
-//     printf("Joined string: %s\n", joined);
-//     free(joined);
-
-//     return 0;
-// }

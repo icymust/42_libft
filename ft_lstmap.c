@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/29 10:04:01 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/31 13:07:49 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:30:50 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,59 +34,3 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	}
 	return (new_list);
 }
-
-// #include <stdio.h>
-// #include <stdlib.h>
-// void *duplicate_content(void *content)
-// {
-//     return ft_strdup((char *)content);
-// }
-
-// void delete_content(void *content)
-// {
-//     free(content);
-// }
-
-// void print_list(t_list *list)
-// {
-//     while (list)
-//     {
-//         printf("%s\n", (char *)list->content);
-//         list = list->next;
-//     }
-// }
-
-// int main(void)
-// {
-//     // Create original list
-//     t_list *list = ft_lstnew(ft_strdup("First"));
-//     t_list *second = ft_lstnew(ft_strdup("Second"));
-//     t_list *third = ft_lstnew(ft_strdup("Third"));
-
-//     if (!list || !second || !third)
-//     {
-//         printf("Memory allocation failed\n");
-//         return (1);
-//     }
-
-//     list->next = second;
-//     second->next = third;
-
-//     // Map the list
-//     t_list *new_list = ft_lstmap(list, duplicate_content, delete_content);
-
-//     // Print original and new lists
-//     printf("Original list:\n");
-//     print_list(list);
-
-//     printf("Mapped list:\n");
-//     print_list(new_list);
-
-//     // Free both lists
-//     ft_lstclear(&list, delete_content);
-//     ft_lstclear(&new_list, delete_content);
-
-//     return 0;
-// }
-// cc -Wall -Wextra -Werror ft_lstmap.c ft_lstdelone.c ft_lstnew.c 
-// ft_lstadd_back.c ft_lstclear.c libft.a 

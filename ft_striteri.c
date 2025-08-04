@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 11:08:33 by mmustone          #+#    #+#             */
-/*   Updated: 2025/07/31 12:26:51 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/04 10:31:59 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,19 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
-// #include <stdio.h>
-// void modify_char(unsigned int i, char *c)
-// {
-//     *c = *c + i;
-// }
-
-// int main(void)
-// {
-//     // Test modifying a string with a function
-//     char str[] = "abcd";
-//     ft_striteri(str, modify_char);
-//     printf("Modified string: %s\n", str);
-
-//     return 0;
-// }
