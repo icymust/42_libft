@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 11:08:09 by mmustone          #+#    #+#             */
-/*   Updated: 2025/08/04 10:31:34 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/05 10:46:41 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ void	ft_putendl_fd(char *s, int fd)
 {
 	size_t	len;
 
+	len = 0;
 	if (!s)
 		return ;
 	len = ft_strlen(s);

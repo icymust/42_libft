@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/28 11:08:20 by mmustone          #+#    #+#             */
-/*   Updated: 2025/08/04 10:31:41 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/05 10:49:46 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int	i;
 
+	i = 0;
 	if (!s)
 		return ;
-	i = 0;
 	while (s[i])
 	{
 		write(fd, &s[i], 1);

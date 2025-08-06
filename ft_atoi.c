@@ -6,7 +6,7 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 08:43:56 by mmustone          #+#    #+#             */
-/*   Updated: 2025/08/04 17:41:15 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/05 11:04:58 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ int	ft_atoi(const char *str)
 	if (*str == '-' || *str == '+')
 	{
 		if (*str == '-')
-			minus = -1;
+			minus *= -1;
 		str++;
 	}
 	while (*str >= '0' && *str <= '9')
 	{
-		result = result * 10 + (*str - '0');
+		result = (result * 10) + (*str - '0');
 		if (result * minus > INT_MAX)
 			return (-1);
 		if (result * minus < INT_MIN)

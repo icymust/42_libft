@@ -14,14 +14,11 @@ BONUS_PATH = ${BONUS:.c=.o}
 CC = cc 
 RM = rm -f
 CFLAGS = -Wall -Wextra -Werror
-INCLUDES = -I include
+
 .PHONY: all clear fclean re bonus
 
-%.o: %.c
-	${CC} ${CFLAGS} ${INCLUDES} -c $< -o $@
-
 $(NAME): ${OBJ_PATH}
-	ar rc ${NAME} ${OBJ_PATH}
+	ar rcs ${NAME} ${OBJ_PATH}
 all: ${NAME}
 
 clean: 
@@ -33,4 +30,4 @@ fclean: clean
 re: fclean all
 
 bonus: ${OBJ_PATH} ${BONUS_PATH}
-	ar rc ${NAME} ${OBJ_PATH} ${BONUS_PATH}
+	ar rcs ${NAME} ${OBJ_PATH} ${BONUS_PATH}

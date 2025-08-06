@@ -6,11 +6,22 @@
 /*   By: mmustone <mmustone@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 11:16:17 by mmustone          #+#    #+#             */
-/*   Updated: 2025/08/04 10:32:03 by mmustone         ###   ########.fr       */
+/*   Updated: 2025/08/05 11:15:44 by mmustone         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static char	*check(const char *s1, const char *s2)
+{
+	if (!s1 && !s2)
+		return (NULL);
+	if (!s1)
+		return (ft_strdup(s2));
+	if (!s2)
+		return (ft_strdup(s1));
+	return (NULL);
+}
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -20,8 +31,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		s2_len;
 	int		i;
 
-	if (!s1 || !s2)
-		return (NULL);
+	dst = check(s1, s2);
+	if (dst)
+		return (dst);
 	dst_pos = 0;
 	s1_len = ft_strlen(s1);
 	s2_len = ft_strlen(s2);
