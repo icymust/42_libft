@@ -1,0 +1,5 @@
+42 LIBFT
+Part 1 - DONE
+Part 2 - DONE
+BONUS - DONE
+125%
